@@ -1,0 +1,368 @@
+{
+  "services": [
+    {
+      "service": "Chirurgie A",
+      "nbMesures": 7,
+      "nbPatients": 2,
+      "frequenceCardiaque": {
+        "moyenne": 76.33333333333333,
+        "mediane": 75.5,
+        "ecartType": 5.055250296034367,
+        "min": 70,
+        "max": 84
+      },
+      "tensionSystolique": {
+        "moyenne": 125,
+        "mediane": 128,
+        "ecartType": 6.187545093630776,
+        "min": 117,
+        "max": 132
+      },
+      "tensionDiastolique": {
+        "moyenne": 80.71428571428571,
+        "mediane": 82,
+        "ecartType": 4.266624149448023,
+        "min": 75,
+        "max": 86
+      },
+      "temperature": {
+        "moyenne": 37.04285714285714,
+        "mediane": 37.1,
+        "ecartType": 0.2321153829895991,
+        "min": 36.7,
+        "max": 37.4
+      },
+      "spo2": {
+        "moyenne": 96.71428571428571,
+        "mediane": 97,
+        "ecartType": 1.0301575072754257,
+        "min": 95,
+        "max": 98
+      },
+      "proportionAlerte": 0,
+      "patientsEnAlerte": []
+    },
+    {
+      "service": "Chirurgie B",
+      "nbMesures": 7,
+      "nbPatients": 2,
+      "frequenceCardiaque": {
+        "moyenne": 82.66666666666667,
+        "mediane": 82,
+        "ecartType": 14.727148022916348,
+        "min": 67,
+        "max": 99
+      },
+      "tensionSystolique": {
+        "moyenne": 128.66666666666666,
+        "mediane": 128,
+        "ecartType": 18.7142251301576,
+        "min": 109,
+        "max": 149
+      },
+      "tensionDiastolique": {
+        "moyenne": 80,
+        "mediane": 71,
+        "ecartType": 11.575836902790225,
+        "min": 69,
+        "max": 94
+      },
+      "temperature": {
+        "moyenne": 37.271428571428565,
+        "mediane": 36.6,
+        "ecartType": 0.8663788114317882,
+        "min": 36.5,
+        "max": 38.4
+      },
+      "spo2": {
+        "moyenne": 96,
+        "mediane": 99,
+        "ecartType": 3.5050983275386565,
+        "min": 91,
+        "max": 99
+      },
+      "proportionAlerte": 0,
+      "patientsEnAlerte": []
+    },
+    {
+      "service": "Reanimation",
+      "nbMesures": 7,
+      "nbPatients": 2,
+      "frequenceCardiaque": {
+        "moyenne": 104.28571428571429,
+        "mediane": 110,
+        "ecartType": 13.551112613406492,
+        "min": 88,
+        "max": 120
+      },
+      "tensionSystolique": {
+        "moyenne": 151.71428571428572,
+        "mediane": 160,
+        "ecartType": 13.729158601981672,
+        "min": 135,
+        "max": 166
+      },
+      "tensionDiastolique": {
+        "moyenne": 96.28571428571429,
+        "mediane": 100,
+        "ecartType": 6.983946606617324,
+        "min": 88,
+        "max": 104
+      },
+      "temperature": {
+        "moyenne": 38.271428571428565,
+        "mediane": 38.6,
+        "ecartType": 0.6496466857658321,
+        "min": 37.5,
+        "max": 39
+      },
+      "spo2": {
+        "moyenne": 90.57142857142857,
+        "mediane": 89,
+        "ecartType": 3.6589281356759136,
+        "min": 86,
+        "max": 95
+      },
+      "proportionAlerte": 0.5714285714285714,
+      "patientsEnAlerte": [
+        "P005"
+      ]
+    }
+  ],
+  "patients": [
+    {
+      "patientId": "P001",
+      "nbMesures": 4,
+      "frequenceCardiaque": {
+        "moyenne": 81,
+        "mediane": 81,
+        "ecartType": 2.449489742783178,
+        "min": 78,
+        "max": 84
+      },
+      "tensionSystolique": {
+        "moyenne": 130.25,
+        "mediane": 130.5,
+        "ecartType": 1.479019945774904,
+        "min": 128,
+        "max": 132
+      },
+      "tensionDiastolique": {
+        "moyenne": 84.25,
+        "mediane": 84.5,
+        "ecartType": 1.479019945774904,
+        "min": 82,
+        "max": 86
+      },
+      "temperature": {
+        "moyenne": 37.225,
+        "mediane": 37.2,
+        "ecartType": 0.10897247358851553,
+        "min": 37.1,
+        "max": 37.4
+      },
+      "spo2": {
+        "moyenne": 96,
+        "mediane": 96,
+        "ecartType": 0.7071067811865476,
+        "min": 95,
+        "max": 97
+      }
+    },
+    {
+      "patientId": "P002",
+      "nbMesures": 3,
+      "frequenceCardiaque": {
+        "moyenne": 71.66666666666667,
+        "mediane": 72,
+        "ecartType": 1.247219128924647,
+        "min": 70,
+        "max": 73
+      },
+      "tensionSystolique": {
+        "moyenne": 118,
+        "mediane": 118,
+        "ecartType": 0.816496580927726,
+        "min": 117,
+        "max": 119
+      },
+      "tensionDiastolique": {
+        "moyenne": 76,
+        "mediane": 76,
+        "ecartType": 0.816496580927726,
+        "min": 75,
+        "max": 77
+      },
+      "temperature": {
+        "moyenne": 36.800000000000004,
+        "mediane": 36.8,
+        "ecartType": 0.08164965809277087,
+        "min": 36.7,
+        "max": 36.9
+      },
+      "spo2": {
+        "moyenne": 97.66666666666667,
+        "mediane": 98,
+        "ecartType": 0.4714045207910317,
+        "min": 97,
+        "max": 98
+      }
+    },
+    {
+      "patientId": "P003",
+      "nbMesures": 3,
+      "frequenceCardiaque": {
+        "moyenne": 97.33333333333333,
+        "mediane": 98,
+        "ecartType": 1.699673171197595,
+        "min": 95,
+        "max": 99
+      },
+      "tensionSystolique": {
+        "moyenne": 147.33333333333334,
+        "mediane": 148,
+        "ecartType": 1.699673171197595,
+        "min": 145,
+        "max": 149
+      },
+      "tensionDiastolique": {
+        "moyenne": 93.33333333333333,
+        "mediane": 94,
+        "ecartType": 0.9428090415820634,
+        "min": 92,
+        "max": 94
+      },
+      "temperature": {
+        "moyenne": 38.26666666666667,
+        "mediane": 38.3,
+        "ecartType": 0.12472191289246332,
+        "min": 38.1,
+        "max": 38.4
+      },
+      "spo2": {
+        "moyenne": 92,
+        "mediane": 92,
+        "ecartType": 0.816496580927726,
+        "min": 91,
+        "max": 93
+      }
+    },
+    {
+      "patientId": "P004",
+      "nbMesures": 4,
+      "frequenceCardiaque": {
+        "moyenne": 68,
+        "mediane": 68,
+        "ecartType": 0.816496580927726,
+        "min": 67,
+        "max": 69
+      },
+      "tensionSystolique": {
+        "moyenne": 110,
+        "mediane": 110,
+        "ecartType": 0.816496580927726,
+        "min": 109,
+        "max": 111
+      },
+      "tensionDiastolique": {
+        "moyenne": 70,
+        "mediane": 70,
+        "ecartType": 0.7071067811865476,
+        "min": 69,
+        "max": 71
+      },
+      "temperature": {
+        "moyenne": 36.525,
+        "mediane": 36.5,
+        "ecartType": 0.04330127018922255,
+        "min": 36.5,
+        "max": 36.6
+      },
+      "spo2": {
+        "moyenne": 99,
+        "mediane": 99,
+        "ecartType": 0,
+        "min": 99,
+        "max": 99
+      }
+    },
+    {
+      "patientId": "P005",
+      "nbMesures": 4,
+      "frequenceCardiaque": {
+        "moyenne": 115.75,
+        "mediane": 116.5,
+        "ecartType": 3.766629793329841,
+        "min": 110,
+        "max": 120
+      },
+      "tensionSystolique": {
+        "moyenne": 163.5,
+        "mediane": 164,
+        "ecartType": 2.29128784747792,
+        "min": 160,
+        "max": 166
+      },
+      "tensionDiastolique": {
+        "moyenne": 102.25,
+        "mediane": 102.5,
+        "ecartType": 1.479019945774904,
+        "min": 100,
+        "max": 104
+      },
+      "temperature": {
+        "moyenne": 38.825,
+        "mediane": 38.849999999999994,
+        "ecartType": 0.1479019945774898,
+        "min": 38.6,
+        "max": 39
+      },
+      "spo2": {
+        "moyenne": 87.5,
+        "mediane": 87.5,
+        "ecartType": 1.118033988749895,
+        "min": 86,
+        "max": 89
+      }
+    },
+    {
+      "patientId": "P006",
+      "nbMesures": 3,
+      "frequenceCardiaque": {
+        "moyenne": 89,
+        "mediane": 89,
+        "ecartType": 0.816496580927726,
+        "min": 88,
+        "max": 90
+      },
+      "tensionSystolique": {
+        "moyenne": 136,
+        "mediane": 136,
+        "ecartType": 0.816496580927726,
+        "min": 135,
+        "max": 137
+      },
+      "tensionDiastolique": {
+        "moyenne": 88.33333333333333,
+        "mediane": 88,
+        "ecartType": 0.4714045207910317,
+        "min": 88,
+        "max": 89
+      },
+      "temperature": {
+        "moyenne": 37.53333333333333,
+        "mediane": 37.5,
+        "ecartType": 0.04714045207910384,
+        "min": 37.5,
+        "max": 37.6
+      },
+      "spo2": {
+        "moyenne": 94.66666666666667,
+        "mediane": 95,
+        "ecartType": 0.4714045207910317,
+        "min": 94,
+        "max": 95
+      }
+    }
+  ]
+}
