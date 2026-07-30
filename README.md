@@ -51,11 +51,11 @@ final case class Mesure(
   spo2: Option[Int]
 )
 
-sealed trait CategorieVigilance
-object CategorieVigilance {
-  case object Normal extends CategorieVigilance
-  case object Surveillance extends CategorieVigilance
-  case object Alerte extends CategorieVigilance
+sealed trait NiveauVigilance
+object NiveauVigilance {
+  case object Normal extends NiveauVigilance
+  case object Surveillance extends NiveauVigilance
+  case object Alerte extends NiveauVigilance
 }
 ```
 
@@ -63,14 +63,16 @@ Les champs vitaux sont en `Option` : l'absence de valeur (capteur
 débranché) est une donnée légitime à conserver, distincte d'une valeur
 aberrante (hors plage physiologique), qui sera rejetée en séance 2.
 
-Voir `src/main/scala/model/Mesure.scala` et `CategorieVigilance.scala`.
+Voir [Mesure.scala](src/main/scala/medical/domain/Mesure.scala) et
+[NiveauVigilance.scala](src/main/scala/medical/domain/NiveauVigilance.scala).
 
 ## 4. Jeu de données d'exemple
 
-`data/dataset_patients_exemple.csv` — 25 mesures, 5 patients, 3 services
-(Chirurgie A, Chirurgie B, Réanimation). Contient déjà les 3 défauts
-attendus : valeurs manquantes, valeur aberrante (ex. 305 bpm, 0.0 °C) et
-un doublon exact (P001 à 08:45:00).
+À ajouter en séance 2 : `data/dataset_patients_exemple.csv`, un jeu
+d'une vingtaine de mesures sur quelques patients et services (ex.
+Chirurgie A, Chirurgie B, Réanimation), avec les 3 défauts attendus
+(valeurs manquantes, valeur aberrante, doublon exact) pour exercer le
+module de nettoyage.
 
 ## 5. Organisation d'équipe
 
@@ -94,9 +96,10 @@ un doublon exact (P001 à 08:45:00).
 
 ## 7. Lancer le projet
 
-Prérequis : sbt ≥ 1.10, JDK 11+.
+Prérequis : sbt 1.10.7 (voir `project/build.properties`), JDK 11+.
 
 ```bash
-sbt run     # compile et exécute Main (validation du modèle de domaine)
-sbt test    # tests unitaires (à partir de la séance 2)
+sbt compile   # compile le modèle de domaine actuel
+sbt run       # exécutera Main une fois le point d'entrée ajouté (séance 2)
+sbt test      # tests unitaires (à partir de la séance 2)
 ```
