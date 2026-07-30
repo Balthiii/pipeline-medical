@@ -1,4 +1,4 @@
-# Pipeline IA simplifié en Scala — Monitoring post-opératoire
+# Pipeline IA simplifié en Scala — Monitoring post-opératoire T
 
 Projet tutoré Scala (10 h, équipe de 3 étudiants) — M1 IABD.
 
