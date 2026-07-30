@@ -17,9 +17,17 @@ class EcrivainJsonSpec extends FunSuite:
         service = "Chirurgie A",
         nbMesures = 2,
         nbPatients = 1,
-        frequenceCardiaque = StatistiquesVitalesJson(Some(80.0), Some(80.0), Some(5.0), Some(75.0), Some(85.0)),
-        tensionSystolique = StatistiquesVitalesJson(None, None, None, None, None),
-        tensionDiastolique = StatistiquesVitalesJson(None, None, None, None, None),
+        frequenceCardiaque = StatistiquesVitalesJson(
+          Some(80.0),
+          Some(80.0),
+          Some(5.0),
+          Some(75.0),
+          Some(85.0)
+        ),
+        tensionSystolique =
+          StatistiquesVitalesJson(None, None, None, None, None),
+        tensionDiastolique =
+          StatistiquesVitalesJson(None, None, None, None, None),
         temperature = StatistiquesVitalesJson(None, None, None, None, None),
         spo2 = StatistiquesVitalesJson(None, None, None, None, None),
         proportionAlerte = 0.5,
@@ -30,9 +38,17 @@ class EcrivainJsonSpec extends FunSuite:
       StatistiquesPatientJson(
         patientId = "P001",
         nbMesures = 2,
-        frequenceCardiaque = StatistiquesVitalesJson(Some(80.0), Some(80.0), Some(5.0), Some(75.0), Some(85.0)),
-        tensionSystolique = StatistiquesVitalesJson(None, None, None, None, None),
-        tensionDiastolique = StatistiquesVitalesJson(None, None, None, None, None),
+        frequenceCardiaque = StatistiquesVitalesJson(
+          Some(80.0),
+          Some(80.0),
+          Some(5.0),
+          Some(75.0),
+          Some(85.0)
+        ),
+        tensionSystolique =
+          StatistiquesVitalesJson(None, None, None, None, None),
+        tensionDiastolique =
+          StatistiquesVitalesJson(None, None, None, None, None),
         temperature = StatistiquesVitalesJson(None, None, None, None, None),
         spo2 = StatistiquesVitalesJson(None, None, None, None, None)
       )
@@ -44,13 +60,15 @@ class EcrivainJsonSpec extends FunSuite:
 
     EcrivainJson.ecrire(rapportExemple, chemin.toString) match
       case Left(erreur) => fail(s"écriture attendue en succès : $erreur")
-      case Right(()) =>
+      case Right(())    =>
         val contenu = Files.readString(chemin)
         val relu = read[RapportExportJson](contenu)
         assertEquals(relu, rapportExemple)
   }
 
-  test("ecrire produit un JSON contenant bien la liste des patients en alerte par service") {
+  test(
+    "ecrire produit un JSON contenant bien la liste des patients en alerte par service"
+  ) {
     val chemin = cheminTemporaire()
     EcrivainJson.ecrire(rapportExemple, chemin.toString)
 
@@ -60,8 +78,10 @@ class EcrivainJsonSpec extends FunSuite:
   }
 
   test("ecrire renvoie une erreur pour un chemin invalide") {
-    EcrivainJson.ecrire(rapportExemple, "chemin/qui/n/existe/pas/rapport.json") match
+    EcrivainJson.ecrire(
+      rapportExemple,
+      "chemin/qui/n/existe/pas/rapport.json"
+    ) match
       case Left(_)  => // attendu
       case Right(_) => fail("un chemin invalide doit produire une erreur")
-  }
   }
