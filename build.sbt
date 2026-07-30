@@ -1,10 +1,11 @@
 ThisBuild / scalaVersion := "3.3.4"
-ThisBuild / version      := "0.1.0-SNAPSHOT"
+ThisBuild / version := "0.1.0-SNAPSHOT"
 ThisBuild / organization := "medical"
 
 lazy val root = (project in file("."))
   .settings(
     name := "pipeline-medical",
+    libraryDependencies += "com.lihaoyi" %% "upickle" % "4.4.3",
     libraryDependencies += "org.scalameta" %% "munit" % "1.0.0" % Test,
     testFrameworks += new TestFramework("munit.Framework")
   )
