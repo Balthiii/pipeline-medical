@@ -47,12 +47,12 @@ object Main:
       case Right((nbLues, rapportNettoyage, rapportJson)) =>
         println(s"Lecture : $nbLues mesure(s) lue(s) depuis $cheminEntree")
         println(
-          s"Nettoyage : ${rapportNettoyage.doublonsSupprimes} doublon(s) supprimé(s), " +
-            s"${rapportNettoyage.lignesRejetees} ligne(s) rejetée(s), " +
-            s"${rapportNettoyage.mesuresFinales} mesure(s) conservée(s)"
+          s"Nettoyage : ${rapportNettoyage.doublonsSupprimes} doublon(s) supprime(s), " +
+            s"${rapportNettoyage.lignesRejetees} ligne(s) rejetee(s), " +
+            s"${rapportNettoyage.mesuresFinales} mesure(s) conservee(s)"
         )
         println(s"Statistiques : ${rapportJson.services.size} service(s), ${rapportJson.patients.size} patient(s)")
-        println(s"Export JSON écrit dans $cheminSortie")
+        println(s"Export JSON ecrit dans $cheminSortie")
       case Left(erreur) =>
         println(s"Erreur du pipeline : $erreur")
         sys.exit(1)
